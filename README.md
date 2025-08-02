@@ -1,30 +1,53 @@
-# SyncRepair
+<div align="center">
 
-Ever wondered when the perfect time is to repair your armor for maximum XP efficiency?
+  <h1>SyncRepair</h1>
 
-**SyncRepair** helps you optimize your armor repairs by checking the damage across all your Mending armor pieces and telling you exactly when to start mending.
+  <p>
+    <a href="https://discord.gg/wqSJGpZVDd">
+      <img src="https://tr7zw.github.io/uikit/social_buttons_icon/Discord-Button-64.png" alt="Discord" style="margin: 5px 10px;">
+    </a>
+    <a href="https://github.com/MrOrdenador/SyncRepair">
+      <img src="https://tr7zw.github.io/uikit/social_buttons_icon/Github-Button-64.png" alt="GitHub" style="margin: 5px 10px;">
+    </a>
+    <a href="https://modrinth.com/mod/syncrepair">
+      <img src="https://tr7zw.github.io/uikit/social_buttons_icon/Modrinth-Button-64.png" alt="Modrinth" style="margin: 5px 10px;">
+    </a>
+  </p>
 
-The mod features an integrated Armor HUD. It’s highly customizable and easy to configure.  
-Note: The positions are a bit odd, I know. It bugged a lot, so I left it that way.
+  <br>
 
-### What this mod does:
-- Calculates how many XP bottles are needed to repair everything to the "cap"  
-  (cap = the durability of the armor piece with the lowest maximum durability).
-- Shows how damaged your armor is using color-coded text.
-- Tells you when to start mending to use exactly "X" XP bottles (configurable, default: 64).
+  <hr style="width: 80%;">
 
-Here you can check if this mod is allowed in the main tierlists that use XP bottles:
+  <p><strong>Ever wondered when the perfect time is to repair your armor for maximum XP efficiency?</strong></p>
 
-|                   | **[McTiers](https://mctiers.com/)** | **[PvPTiers](https://pvptiers.com/)** | **[SubTiers](https://subtiers.net/)** |
-|-------------------|-------------|--------------|--------------|
-| **SMP/DiaSMP**     | Allowed     | Allowed      | Allowed      |
-| **NethPot**        | NOT Allowed **in tests** | NOT Allowed **in tests**            | –            |
-| **CPvP/DiaCPvP**   | ?           | ?            | Allowed            |
-| **Mace**           | –           | ?            | –            |
+  <p><strong>SyncRepair</strong> helps you optimize your armor repairs by checking the damage across all your Mending armor pieces and telling you exactly when to start mending.</p>
 
-If your gamemode isn’t listed in the table above, I recommend asking the staff or checking the rules channel.
+  <hr style="width: 80%;">
 
-Personally, I believe this mod works better in Not-RNG based XP bottles environments. I like both McTiers and PvPTiers, but it's fair to say it's more useful in the McTiers environment
+  <h2>Legality in Different Competitive PvP Tierlists</h2>
 
-PRs and suggestions are welcome!  
-Open an issue or make a pull request if you find bugs or have ideas.
+  <p>Check whether this mod is allowed in your competitive PvP environment:</p>
+
+  |                       | [**McTiers**](https://mctiers.com/) | [**PvPTiers**](https://pvptiers.com/) | [**SubTiers**](https://subtiers.net/) |
+|-----------------------|-----------------|------------------|------------------|
+| **SMP / DiaSMP**      | Allowed         | Allowed          | Allowed          |
+| **NethPot**           | Not Allowed (in tests) | Not Allowed (in tests) | –                |
+| **CPvP / DiaCPvP**    | Unknown         | Unknown          | Allowed          |
+| **Mace**              | –               | Unknown          | –                |
+
+  <p style="max-width: 700px; margin: 20px auto;">
+    <em>If your gamemode isn’t listed, check with your server’s staff or rulebook.</em><br><br>
+    Personally, I find this mod most useful in non-RNG based XP bottle environments. It works the best in McTiers, but it works well in PvPTiers and SubTiers too!
+  </p>
+
+  <hr style="width: 80%;">
+
+  <h2>FAQ</h2>
+
+  <h3>Does this conflict with other HUD mods?</h3>
+  <p>Not directly, but if you use another ArmorHud, you might have to turn off features to avoid overlapping.</p>
+
+  <h3>Does this mod work in different clients?</h3>
+  <p>Of course it does!</p>
+
+</div>
