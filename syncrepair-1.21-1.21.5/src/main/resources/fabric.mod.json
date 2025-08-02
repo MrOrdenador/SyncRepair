@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "syncrepair",
+  "version": "${version}",
+  "name": "SyncRepair",
+  "description": "This Armor HUD allows you to see the durability of your armor and the amount of XP bottles you need to repair it, along with other useful features",
+  "authors": ["MrOrdenador"],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/syncrepair/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.mrordenador.syncrepair.SyncRepair"],
+    "client": ["com.mrordenador.syncrepair.SyncRepairClient"],
+    "modmenu": ["com.mrordenador.syncrepair.ModMenuIntegration"]
+  },
+  "mixins": [
+    "syncrepair.mixins.json",
+    {
+      "config": "syncrepair.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": ">=1.21 <1.21.6",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}

@@ -1,0 +1,103 @@
+plugins {
+	id 'fabric-loom' version '1.11.4'
+	id 'maven-publish'
+}
+
+// Usar la versión más baja del rango para máxima compatibilidad
+def minecraftVersion = project.hasProperty('minecraft_version') ? project.minecraft_version : '1.21.6'
+def yarnMappings = project.hasProperty('yarn_mappings') ? project.yarn_mappings : '1.21.6+build.1'
+def loaderVersion = project.hasProperty('loader_version') ? project.loader_version : '0.16.9'
+def fabricVersion = project.hasProperty('fabric_version') ? project.fabric_version : '0.128.0+1.21.6'
+
+version = project.hasProperty('mod_version') ? project.mod_version : '1.0.0'
+group = project.hasProperty('maven_group') ? project.maven_group : 'com.mrordenador'
+
+base {
+	archivesName = project.hasProperty('archives_base_name') ? project.archives_base_name : 'syncrepair'
+}
+
+repositories {
+	mavenCentral()
+	maven {
+		name = 'Fabric'
+		url = 'https://maven.fabricmc.net/'
+	}
+	maven {
+		name = 'Shedaniel Maven'
+		url = 'https://maven.shedaniel.me/'
+	}
+	maven {
+		name = 'TerraformersMC'
+		url = 'https://maven.terraformersmc.com/releases/'
+	}
+}
+
+loom {
+	splitEnvironmentSourceSets()
+	mods {
+		syncrepair {
+			sourceSet sourceSets.main
+			sourceSet sourceSets.client
+		}
+	}
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:${minecraftVersion}"
+	mappings "net.fabricmc:yarn:${yarnMappings}:v2"
+	modImplementation "net.fabricmc:fabric-loader:${loaderVersion}"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${fabricVersion}"
+
+	// Usar una versión de cloth-config compatible con el rango de versiones
+	modApi "me.shedaniel.cloth:cloth-config-fabric:17.0.144"
+	include "me.shedaniel.cloth:cloth-config-fabric:17.0.144"
+
+	// ModMenu compatible con el rango de versiones
+	modImplementation "com.terraformersmc:modmenu:13.0.3"
+}
+
+processResources {
+	inputs.property "version", version
+	inputs.property "minecraft_version", minecraftVersion
+	inputs.property "loader_version", loaderVersion
+	filteringCharset "UTF-8"
+
+	filesMatching("fabric.mod.json") {
+		expand "version": version,
+				"minecraft_version": minecraftVersion,
+				"loader_version": loaderVersion
+	}
+}
+
+def targetJavaVersion = 21
+tasks.withType(JavaCompile).configureEach {
+	it.options.encoding = "UTF-8"
+	if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+		it.options.release.set(targetJavaVersion)
+	}
+}
+
+java {
+	def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+	if (JavaVersion.current() < javaVersion) {
+		toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+	}
+	withSourcesJar()
+}
+
+jar {
+	from("LICENSE") {
+		rename { "${it}_${base.archivesName.get()}" }
+	}
+}
+
+publishing {
+	publications {
+		maven(MavenPublication) {
+			from components.java
+		}
+	}
+	repositories {
+		// Aquí puedes agregar repositorios para publicar tu mod
+	}
+}
