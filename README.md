@@ -28,7 +28,7 @@
 
   <p>Check whether this mod is allowed in your competitive PvP environment:</p>
 
-  |                       | [**McTiers**](https://mctiers.com/) | [**PvPTiers**](https://pvptiers.com/) | [**SubTiers**](https://subtiers.net/) |
+  |      Gamemodes                 | [**McTiers**](https://mctiers.com/) | [**PvPTiers**](https://pvptiers.com/) | [**SubTiers**](https://subtiers.net/) |
 |-----------------------|-----------------|------------------|------------------|
 | **SMP / DiaSMP**      | Allowed         | Allowed          | Allowed          |
 | **NethPot**           | Not Allowed (in tests) | Not Allowed (in tests) | –                |
