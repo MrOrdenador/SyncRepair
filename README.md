@@ -1,22 +1,21 @@
 <div align="center">
 
   <h1>SyncRepair</h1>
-
   <p>
     <a href="https://discord.gg/wqSJGpZVDd">
-      <img src="https://tr7zw.github.io/uikit/social_buttons_icon/Discord-Button-64.png" alt="Discord" style="margin: 5px 10px;">
+      <img src="https://raw.githubusercontent.com/intergrav/devins-badges/refs/heads/v3/assets/compact-minimal/social/discord-plural_46h.png">
     </a>
     <a href="https://github.com/MrOrdenador/SyncRepair">
-      <img src="https://tr7zw.github.io/uikit/social_buttons_icon/Github-Button-64.png" alt="GitHub" style="margin: 5px 10px;">
+      <img src="https://raw.githubusercontent.com/intergrav/devins-badges/refs/heads/v3/assets/compact-minimal/social/github-plural_46h.png" >
     </a>
     <a href="https://modrinth.com/mod/syncrepair">
-      <img src="https://tr7zw.github.io/uikit/social_buttons_icon/Modrinth-Button-64.png" alt="Modrinth" style="margin: 5px 10px;">
+      <img src="https://raw.githubusercontent.com/intergrav/devins-badges/refs/heads/v3/assets/compact/available/modrinth_46h.png">
     </a>
   </p>
-
-  <br>
-
-  <hr style="width: 80%;">
+  <a href="https://modrinth.com/mod/cloth-config" style="margin: 3px;">
+    <img  src="https://raw.githubusercontent.com/intergrav/devins-badges/refs/heads/v3/assets/compact/requires/cloth-config-api_46h.png" style="margin: 4px;">
+    
+  </a>
 
   <p><strong>Ever wondered when the perfect time is to repair your armor for maximum XP efficiency?</strong></p>
 
@@ -28,12 +27,12 @@
 
   <p>Check whether this mod is allowed in your competitive PvP environment:</p>
 
-  |      Gamemodes                 | [**McTiers**](https://mctiers.com/) | [**PvPTiers**](https://pvptiers.com/) | [**SubTiers**](https://subtiers.net/) |
-|-----------------------|-----------------|------------------|------------------|
-| **SMP / DiaSMP**      | Allowed         | Allowed          | Allowed          |
-| **NethPot**           | Not Allowed (in tests) | Not Allowed (in tests) | –                |
-| **CPvP / DiaCPvP**    | Unknown         | Unknown          | Allowed          |
-| **Mace**              | –               | Unknown          | –                |
+| Gamemode           | [**McTiers**](https://mctiers.com/) | [**PvPTiers**](https://pvptiers.com/) | [**SubTiers**](https://subtiers.net/) |
+| ------------------ | ----------------------------------- | ------------------------------------- | ------------------------------------- |
+| **SMP / DiaSMP**   | Allowed                             | Allowed                               | Allowed                               |
+| **NethPot**        | Not Allowed (in tests)              | Not Allowed (in tests)                | –                                     |
+| **CPvP / DiaCPvP** | Unknown                             | Unknown                               | Allowed                               |
+| **Mace**           | –                                   | Unknown                               | –                                     |
 
   <p style="max-width: 700px; margin: 20px auto;">
     <em>If your gamemode isn’t listed, check with your server’s staff or rulebook.</em><br><br>
